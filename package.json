@@ -1,6 +1,6 @@
 {
   "name": "rille-remote",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Rille + Socket.io",
   "main": "dist/lib/index.js",
   "author": "dbmeads@hotmail.com",
@@ -17,10 +17,10 @@
     "mocha": "mocha \"dist/test/**/*.spec.js\"",
     "test": "npm run build && npm run mocha"
   },
-  "dependencies": {
-    "rille": "^0.10.0",
-    "socket.io": "^1.4.5",
-    "socket.io-client": "^1.4.5"
+  "peerDependencies": {
+    "rille": "0.12.x",
+    "socket.io": "1.4.x",
+    "socket.io-client": "1.4.x"
   },
   "devDependencies": {
     "babel-cli": "^6.7.5",
@@ -35,6 +35,9 @@
     "react": "^15.0.1",
     "react-addons-test-utils": "^15.0.1",
     "react-dom": "^15.0.1",
-    "react-testutils-additions": "^15.0.0"
+    "react-testutils-additions": "^15.0.0",
+    "rille": "^0.12.0",
+    "socket.io": "^1.4.5",
+    "socket.io-client": "^1.4.5"
   }
 }

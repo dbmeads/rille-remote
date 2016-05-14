@@ -5,6 +5,8 @@
 ## Quick Links
 
 #### General
+* [Installation](#installation)
+* [Contributing](#contributing)
 * [Examples](#examples)
 * [Change Log](#change-log)
 
@@ -18,15 +20,22 @@ TBD
 
 [Back To Top](#quick-links)
 
-## Building/Testing
+## Installation
 
-```
-# Build
-$ npm run build
+1. Install rille-remote
+a. `npm install rille-remote --save`
+2. Install peer dependancies
+a. `npm install socket.io --save`
+b. `npm install socket.io-client --save`
 
-# Test
-$ npm test
-```
+[Back To Top](#quick-links)
+
+## Contributing
+
+* Build rille-remote
+a. `npm run build`
+* Test rille-remote
+a. `npm run build`
 
 [Back To Top](#quick-links)
 
