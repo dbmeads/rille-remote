@@ -22,20 +22,15 @@ TBD
 
 ## Installation
 
-1. Install rille-remote
-a. `npm install rille-remote --save`
-2. Install peer dependancies
-a. `npm install socket.io --save`
-b. `npm install socket.io-client --save`
+1. Install rille-remote: `npm install rille-remote --save`
+2. Install peer dependancies: `npm install socket.io --save` `npm install socket.io-client --save`
 
 [Back To Top](#quick-links)
 
 ## Contributing
 
-* Build rille-remote
-a. `npm run build`
-* Test rille-remote
-a. `npm run build`
+* Build rille-remote: `npm run build`
+* Test rille-remote: `npm run build`
 
 [Back To Top](#quick-links)
 
