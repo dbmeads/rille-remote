@@ -9,7 +9,8 @@
 * [Change Log](#change-log)
 
 #### Modules
-* [RemoteStore](#remotestore)
+* [Client](#client)
+* [Server](#server)
 
 ## Examples
 
@@ -29,10 +30,18 @@ $ npm test
 
 [Back To Top](#quick-links)
 
-## RemoteStore
+## Client
 
 ```js
-RemoteStore();
+Client();
+```
+
+[Back To Top](#quick-links)
+
+## Server
+
+```js
+Server();
 ```
 
 [Back To Top](#quick-links)
