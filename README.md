@@ -29,8 +29,8 @@ TBD
 
 ## Contributing
 
-* Build rille-remote: `npm run build`
-* Test rille-remote: `npm run build`
+* To Build: `npm run build`
+* To Test: `npm test`
 
 [Back To Top](#quick-links)
 
