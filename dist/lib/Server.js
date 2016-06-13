@@ -15,10 +15,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
-function Server(server) {
+function Server(server, options) {
     var io = (0, _socket2.default)(server);
 
-    var route = (0, _rille.Route)({
+    var route = (0, _rille.Route)(Object.assign({
         route: function route(_route) {
             _route.subscribe(function () {
                 for (var _len = arguments.length, entry = Array(_len), _key = 0; _key < _len; _key++) {
@@ -34,7 +34,7 @@ function Server(server) {
                 return route.entry;
             };
         }
-    });
+    }, options));
 
     io.on('connection', function (socket) {
         var subscriptions = {};
