@@ -39,7 +39,7 @@ function Server(server, options) {
     io.on('connection', function (socket) {
         var subscriptions = {};
 
-        socket.on('message', function (entry) {
+        socket.on('data', function (entry) {
             var _route2;
 
             (_route2 = route(entry[0])).push.apply(_route2, _toConsumableArray(entry.slice(1)));
@@ -51,7 +51,7 @@ function Server(server, options) {
                     entry[_key2] = arguments[_key2];
                 }
 
-                socket.emit('message', entry);
+                socket.emit('data', entry);
             });
         });
 

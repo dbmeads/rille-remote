@@ -39,7 +39,7 @@ function Client(host) {
                 }
 
                 entry.unshift(_rille.Key.stringify(route.keys));
-                socket.emit('message', entry);
+                socket.emit('data', entry);
             };
             wrapper.oldPush = route.push;
             wrapper.subscribe = function (callback) {
@@ -56,7 +56,7 @@ function Client(host) {
         }
     });
 
-    socket.on('message', function (entry) {
+    socket.on('data', function (entry) {
         var _route2;
 
         (_route2 = route(entry[0])).oldPush.apply(_route2, _toConsumableArray(entry.slice(1)));
